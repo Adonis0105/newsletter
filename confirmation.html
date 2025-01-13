@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation d'abonnement</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/confirmation.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon">
+        <span>✔️</span>
+      </div>
+      <h1>Merci pour votre abonnement !</h1>
+      <p>
+        Un email de confirmation a été envoyé à
+        <strong>ash@loremcompany.com</strong>. Veuillez l'ouvrir et cliquer sur
+        le bouton à l'intérieur pour confirmer votre abonnement.
+      </p>
+      <button class="dismiss-btn">Ignorer le message</button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sélectionne le bouton et la boîte de message
+        const dismissBtn = document.querySelector(".dismiss-btn");
+        const messageBox = document.getElementById("messageBox");
+
+        // Ajoute un écouteur d'événement au bouton
+        dismissBtn.addEventListener("click", function () {
+          // Cache la boîte de message
+
+          // Redirige vers la page index.html après un court délai (500ms)
+          setTimeout(() => {
+            window.location.href = "index.html"; // Redirection vers index.html
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>

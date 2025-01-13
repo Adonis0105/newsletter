@@ -1,0 +1,17 @@
+/* image-section.css */
+
+.image-section {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-section svg {
+  height: 400px;
+}
+
+.image-section img {
+  display: none; /* On cache les balises img si utilisé via CSS */
+}

@@ -1,0 +1,24 @@
+/* Bloc droit */
+.right {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.right img {
+  max-width: 200%;
+
+  margin-right: 20px;
+
+  height: 500px;
+}
+
+.right::after {
+  content: "";
+  position: absolute;
+
+  background-size: contain;
+  z-index: 0;
+}
